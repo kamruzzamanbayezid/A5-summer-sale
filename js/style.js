@@ -9,7 +9,8 @@ function clickOnCard(items) {
       addCartTitle.appendChild(li);
       li.classList.add('list-decimal');
       li.classList.add('font-medium');
-      li.classList.add('text-xl');
+      li.classList.add('mb-3')
+      li.classList.add('text-2xl');
 
       const itemPrice = items.childNodes[3].childNodes[5].innerText.split(' ')[0];
       const cartTotal = document.getElementById('cart-total');
