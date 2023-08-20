@@ -22,7 +22,7 @@ function clickOnCard(items) {
             const purchaseBtn = document.getElementById('purchase-btn');
             purchaseBtn.removeAttribute('disabled')
       }
-      if (totalTwoDecimal > 200) {
+      if (totalTwoDecimal >= 200) {
             const applyBtn = document.getElementById('apply-btn');
             applyBtn.removeAttribute('disabled');
       }
