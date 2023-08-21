@@ -18,6 +18,9 @@ function clickOnCard(items) {
       const totalTwoDecimal = total.toFixed(2);
       cartTotal.innerText = totalTwoDecimal;
 
+      const newPriceBeforeDiscount = document.getElementById('new-total');
+      newPriceBeforeDiscount.innerText = totalTwoDecimal;
+
       if (totalTwoDecimal > 0) {
             const purchaseBtn = document.getElementById('purchase-btn');
             purchaseBtn.removeAttribute('disabled')
@@ -52,7 +55,7 @@ function clickToGetDiscount() {
             const addNewPrice = document.getElementById('new-total');
             addNewPrice.innerText = newPriceTwoDecimal;
       }
-      else{
+      else {
             return;
       }
 }
